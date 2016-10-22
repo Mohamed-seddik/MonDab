@@ -2,11 +2,20 @@ package DAB;
 
 public class Compte
 {
-     String name;
+     String name;  
      int numcompte;
      double solde;
      double interet;
 
+     /* 
+     Attention aux droits d'accès !!!
+     
+     private    int numcompte;
+    private  double solde;
+     ....
+     */
+     
+     
     public void setName(String name)
     {
         this.name=name;
@@ -63,4 +72,31 @@ public class Compte
     {
         return solde = solde + change  ;
     }
+     
+     
+     /*
+     Dans un code il faut bien choisir les noms de tes méthodes/variables 
+     
+     exemples
+     ========
+     public void infoCompte() {
+        System.out.println("Compte n°" + ID + " solde=" + solde + " DA");
+    }
+
+    public double calcul_interet() {
+        solde = solde - solde * taux / 100;
+        return solde;
+    }
+
+    public void depot(double s) {
+        solde = solde + s;
+    }
+
+    public void retrait(double s) {
+        solde = solde - s;
+    }
+     
+     
+     
+     */
 }
