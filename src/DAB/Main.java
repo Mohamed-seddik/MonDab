@@ -48,12 +48,13 @@ public class Main
                     case 1:
                     {
                         System.out.println("\nvotre solde est de : " + client.solde + "DA sans intert");
+                    // pourquoi encore faire appel a System.out.println ? alors que affich qui affiche les infos sur le compte est une méthode de Compte
                     }
                     break;
 
                         case 2:
                         {
-                            System.out.println("\nle taut d'interet de votre compte est de : " + client.interet + "%");
+                            System.out.println("\nle taut d'interet de votre compte est de : " + client.interet + "%");// c'est incorrect il faut appeler la méthode calcul ici
                         }
                         break;
 
